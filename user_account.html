@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lace Grapce | Кабинет пользователя</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/slick.css"/>
+	<link rel="stylesheet" href="css/jquery.fancybox.css"/>
+	<link rel="stylesheet" href="css/fonts.css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<div class="page order__page">
+		<div class="page__header">
+			<header class="header">
+				<div class="wrapper">
+					<div class="header__inner">
+						<div class="header__top">
+							<div class="header__logo">
+								<a href="index.html">
+									<img src="img/logo.svg" class="logo" alt="logo">
+									<img src="img/logo_dark.svg" class="logo_dark" alt="logo">
+								</a>
+							</div>
+							<div class="mob_goback"></div>
+							<!-- <div class="mobile-hamburger sidebar-open"><span></span></div> -->
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="page__content">
+			<div class="content">
+				<div class="wrapper">
+					<div class="user__content">
+						<h2 class="content__header">личный кабинет</h2>
+						<div class="tabs user__tabs">
+							<input class="tabs-input" id="tab_bouquets" type="radio" name="tabs_user_account" checked>
+							<label class="tabs-label" for="tab_bouquets" title="Мои букеты"><span>Мои букеты</span></label>
+
+							<input  class="tabs-input" id="tab_courses" type="radio" name="tabs_user_account">
+							<label class="tabs-label" for="tab_courses" title="Мои курсы"><span>Мои курсы</span></label>
+
+							<input  class="tabs-input" id="tab_certificate" type="radio" name="tabs_user_account">
+							<label class="tabs-label" for="tab_certificate" title="Сертификаты"><span>Сертификаты</span></label>
+
+							<div class="sections" id="content_bouquets">
+								<div class="set">
+									<div class="set__btn active">
+										<h3 class="content__header">Активные заказы</h3>
+									</div>
+									<div class="set__content" style="display: block;">
+										<div class="user__items">
+											<div class="user__item user__item_title">
+												<div class="user__item_pic">
+													<span class="user__item_text">Товар</span>
+												</div>
+												<div class="user__item_info-big"></div>
+												<div class="user__item_info"><span class="user__item_text">Цена</span></div>
+												<div class="user__item_info"><span class="user__item_text">Адрес<br>доставки</span></div>
+												<div class="user__item_info"><span class="user__item_text">Дата и время доставки</span></div>
+												<div class="user__item_info"><span class="user__item_text">Статус заказа</span></div>
+											</div>
+											<div class="user__item">
+												<div class="user__item_pic">
+													<img src="img/bouquets_showcases/1.JPG" alt="pic">
+													<a href="#" class="btn_dark more" data-fancybox data-type="ajax" data-src="modal-info.html" data-selector="#modal-info">подробнее о заказе</a>
+												</div>
+												<div class="user__item_info-big">
+													<span class="user__item_text">Букет “Нежность”</span>
+													<span class="user__item_text">Размер S</span>
+													<br>
+													<span class="user__item_text">#3455</span>
+													<a href="#" class="btn_dark more__mob" data-fancybox data-type="ajax" data-src="modal-info.html" data-selector="#modal-info">подробнее о заказе</a>
+												</div>
+												<div class="user__item_info"><span class="user__item_text">10.000 руб</span></div>
+												<div class="user__item_info"><span class="user__item_text">Костомаровский пер.3, стр.3</span></div>
+												<div class="user__item_info"><span class="user__item_text">01.01.2022<br><br>с 14-16.00</span></div>
+												<div class="user__item_info"><span class="user__item_text">Принят<br><br><span class="grey_text_t">Передан курьеру</span></span></div>
+												<div class="user__item_info-sm">
+													<span class="user__item_text">Цена: 15.000 руб</span>
+													<span class="user__item_text">Адрес доставки: <br>Костомаровский пер.3, стр.3 </span>
+													<span class="user__item_text">Дата и время доставки:<br>01.01.2022 <br>с 14-16.00 </span>
+													<span class="user__item_text">Статус заказа:<br>Принят</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="set">
+									<div class="set__btn active">
+										<h3 class="content__header content__header_user">Завершенные заказы</h3>
+									</div>
+									<div class="set__content" style="display: block;">
+										<div class="user__items">
+											<div class="user__item user__item_title">
+												<div class="user__item_pic">
+													<span class="user__item_text">Товар</span>
+												</div>
+												<div class="user__item_info-big"></div>
+												<div class="user__item_info"><span class="user__item_text">Цена</span></div>
+												<div class="user__item_info"><span class="user__item_text">Адрес<br>доставки</span></div>
+												<div class="user__item_info"><span class="user__item_text">Дата и время доставки</span></div>
+												<div class="user__item_info"><span class="user__item_text">Статус заказа</span></div>
+											</div>
+											<div class="user__item">
+												<div class="user__item_pic">
+													<img src="img/bouquets_showcases/1.JPG" alt="pic">
+													<a href="#" class="btn_dark more" data-fancybox data-type="ajax" data-src="modal-info.html" data-selector="#modal-info">подробнее о заказе</a>
+												</div>
+												<div class="user__item_info-big">
+													<span class="user__item_text">Букет “Нежность”</span>
+													<span class="user__item_text">Размер S</span>
+													<br>
+													<span class="user__item_text">#3455</span>
+													<a href="#" class="btn_dark more__mob" data-fancybox data-type="ajax" data-src="modal-info.html" data-selector="#modal-info">подробнее о заказе</a>
+												</div>
+												<div class="user__item_info"><span class="user__item_text">10.000 руб</span></div>
+												<div class="user__item_info"><span class="user__item_text">Костомаровский пер.3, стр.3</span></div>
+												<div class="user__item_info"><span class="user__item_text">01.01.2022<br><br>с 14-16.00</span></div>
+												<div class="user__item_info"><span class="user__item_text">Доставлен</span></div>
+												<div class="user__item_info-sm">
+													<span class="user__item_text">Цена: 10.000 руб</span>
+													<span class="user__item_text">Адрес доставки: <br>Костомаровский пер.3, стр.3 </span>
+													<span class="user__item_text">Дата и время доставки:<br>01.01.2022 <br>с 14-16.00 </span>
+													<span class="user__item_text">Статус заказа:<br>Доставлен</span>
+												</div>
+											</div>
+											<div class="user__item">
+												<div class="user__item_pic">
+													<img src="img/bouquets_showcases/1.JPG" alt="pic">
+													<a href="#" class="btn_dark more" data-fancybox data-type="ajax" data-src="modal-info.html" data-selector="#modal-info">подробнее о заказе</a>
+												</div>
+												<div class="user__item_info-big">
+													<span class="user__item_text">Букет “Нежность”</span>
+													<span class="user__item_text">Размер S</span>
+													<br>
+													<span class="user__item_text">#3455</span>
+													<a href="#" class="btn_dark more__mob" data-fancybox data-type="ajax" data-src="modal-info.html" data-selector="#modal-info">подробнее о заказе</a>
+												</div>
+												<div class="user__item_info"><span class="user__item_text">10.000 руб</span></div>
+												<div class="user__item_info"><span class="user__item_text">Костомаровский пер.3, стр.3</span></div>
+												<div class="user__item_info"><span class="user__item_text">01.01.2022<br><br>с 14-16.00</span></div>
+												<div class="user__item_info"><span class="user__item_text">Доставлен</span></div>
+												<div class="user__item_info-sm">
+													<span class="user__item_text">Цена: 150.000 руб</span>
+													<span class="user__item_text">Адрес доставки: <br>Костомаровский пер.3, стр.3 </span>
+													<span class="user__item_text">Дата и время доставки:<br>01.01.2022 <br>с 14-16.00 </span>
+													<span class="user__item_text">Статус заказа:<br>Доставлен</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sections" id="content_courses">
+								<div class="user__courses">
+									<div class="set">
+										<div class="set__btn active">
+											<h3 class="content__header">ожидает оплаты</h3>
+										</div>
+										<div class="set__content" style="display: block;">
+											<div class="user__items">
+												<div class="user__item user__item_title">
+													<div class="user__item_info-big"><span class="user__item_text">Курс/мастер-класс</span></div>
+													<div class="user__item_info"><span class="user__item_text">Период</span></div>
+													<div class="user__item_info"><span class="user__item_text">Статус заказа</span></div>
+													<div class="user__item_info"><span class="user__item_text">Стоимость</span></div>
+												</div>
+												<div class="user__item">
+													<div class="user__item_info-big">
+														<a href="#" class="user-sidebar__link grey_text">Онлайн курс “Новогодний”</a>
+													</div>
+													<div class="user__item_info"><span class="user__item_text">Период не ограничен</span></div>
+													<div class="user__item_info"><span class="user__item_text">
+														<a href="#" class="user-sidebar__link">Не оплачен</a><br><br>
+														Заказ #4400 <br>
+														от 29.01.2021
+														</span>
+													</div>
+													<div class="user__item_info"><span class="user__item_text">8.000 руб</span></div>
+													<div class="user__item_info-sm">
+														<span class="user__item_text">Заказ #4400</span>
+														<span class="user__item_text">8.000 руб</span>
+														<span class="user__item_text">Не оплачен</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="set">
+										<div class="set__btn active">
+											<h3 class="content__header content__header_user">Активные курсы</h3>
+										</div>
+										<div class="set__content" style="display: block;">
+											<div class="user__items">
+												<div class="user__item user__item_title">
+													<div class="user__item_info-big"><span class="user__item_text">Курс/мастер-класс</span></div>
+													<div class="user__item_info"><span class="user__item_text">Период</span></div>
+													<div class="user__item_info"><span class="user__item_text">Статус заказа</span></div>
+													<div class="user__item_info"><span class="user__item_text">Стоимость</span></div>
+												</div>
+												<div class="user__item">
+													<div class="user__item_info-big">
+														<a href="#" class="user-sidebar__link">Онлайн курс “Новогодний”</a>
+													</div>
+													<div class="user__item_info"><span class="user__item_text">с 10.02.2022 <br>до 10.03.2022</span></div>
+													<div class="user__item_info"><span class="user__item_text">
+														<a href="#" class="user-sidebar__text">Активен</a><br><br>
+														Заказ #4500<br>
+														от 29.01.2021
+														</span>
+													</div>
+													<div class="user__item_info"><span class="user__item_text">8.000 руб</span></div>
+													<div class="user__item_info-sm">
+														<span class="user__item_text">Заказ #4400</span>
+														<span class="user__item_text">8.000 руб</span>
+														<span class="user__item_text">Активен</span>
+														<span class="user__item_text">с 10.01.2022-10.07.2022</span>
+													</div>
+												</div>
+												<div class="user__item">
+													<div class="user__item_info-big">
+														<a href="#" class="user-sidebar__link">Онлайн курс “Свадебный.Интенсив”</a>
+													</div>
+													<div class="user__item_info"><span class="user__item_text">с 10.02.2022 <br>до 10.03.2022</span></div>
+													<div class="user__item_info"><span class="user__item_text">
+														<a href="#" class="user-sidebar__text">Активен</a><br><br>
+														Заказ #4410<br>
+														от 29.01.2021
+														</span>
+													</div>
+													<div class="user__item_info"><span class="user__item_text">8.000 руб</span></div>
+													<div class="user__item_info-sm">
+														<span class="user__item_text">Заказ #4401</span>
+														<span class="user__item_text">8.000 руб</span>
+														<span class="user__item_text">Активен</span>
+														<span class="user__item_text">с 10.01.2022-10.07.2022</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="set">
+										<div class="set__btn active">
+											<h3 class="content__header content__header_user">Завершенные курсы</h3>
+										</div>
+										<div class="set__content" style="display: block;">
+											<div class="user__items">
+												<div class="user__item user__item_title">
+													<div class="user__item_info-big"><span class="user__item_text">Курс/мастер-класс</span></div>
+													<div class="user__item_info"><span class="user__item_text">Период</span></div>
+													<div class="user__item_info"><span class="user__item_text">Статус заказа</span></div>
+													<div class="user__item_info"><span class="user__item_text">Стоимость</span></div>
+												</div>
+												<div class="user__item grey_text">
+													<div class="user__item_info-big">
+														<span class="user__item_text">Онлайн мастер-класс “Скетчинг для флористов”</span>
+													</div>
+													<div class="user__item_info"><span class="user__item_text">с 10.02.2022 <br>до 10.03.2022</span></div>
+													<div class="user__item_info"><span class="user__item_text">
+														<span class="user__item_text">Завершен</span><br><br>
+														Заказ #4500<br>
+														от 29.01.2021
+														</span>
+													</div>
+													<div class="user__item_info"><span class="user__item_text">8.000 руб</span></div>
+													<div class="user__item_info-sm">
+														<span class="user__item_text">Заказ #4400</span>
+														<span class="user__item_text">8.000 руб</span>
+														<span class="user__item_text">Завершен</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+
+							<div class="sections" id="content_certificate">
+								<div class="user__certificate">
+									<div class="set">
+										<div class="set__btn active">
+											<h3 class="content__header">Активные заказы</h3>
+										</div>
+										<div class="set__content" style="display: block;">
+											<div class="user__items">
+												<div class="user__item user__item_title">
+													<div class="user__item_info-big"><span class="user__item_text">Сертификат</span></div>
+													<div class="user__item_info"><span class="user__item_text">Период</span></div>
+													<div class="user__item_info"><span class="user__item_text">Статус заказа</span></div>
+													<div class="user__item_info"><span class="user__item_text">Номинал</span></div>
+													<div class="user__item_info"><span class="user__item_text">Остаток</span></div>
+												</div>
+												<div class="user__item">
+													<div class="user__item_info-big">
+														<a href="#" class="user-sidebar__text">Подарочный сертификат</a>
+													</div>
+													<div class="user__item_info"><span class="user__item_text">с 10.02.2022 <br>до 10.08.2022</span></div>
+													<div class="user__item_info"><span class="user__item_text">
+														<a href="#" class="user-sidebar__link">Не использован</a><br><br>
+														Заказ #4400<br>
+														от 29.01.2021
+														</span>
+													</div>
+													<div class="user__item_info"><span class="user__item_text">10.000 руб</span></div>
+													<div class="user__item_info"><span class="user__item_text">8.000 руб</span></div>
+													<div class="user__item_info-sm">
+														<span class="user__item_text">Заказ #4400</span>
+														<span class="user__item_text">10.000 руб</span>
+														<span class="user__item_text">Активен</span>
+														<span class="user__item_text">с 10.01.2022-10.07.2022</span>
+														<span class="user__item_text">Остаток: 8.000 руб</span>
+													</div>
+												</div>
+												<div class="user__item">
+													<div class="user__item_info-big">
+														<a href="#" class="user-sidebar__text">Подарочный сертификат</a>
+													</div>
+													<div class="user__item_info"><span class="user__item_text">с 10.02.2022 <br>до 10.03.2022</span></div>
+													<div class="user__item_info"><span class="user__item_text">
+														<a href="#" class="user-sidebar__link">Активен</a><br><br>
+														Заказ #4400<br>
+														от 29.01.2021
+														</span>
+													</div>
+													<div class="user__item_info"><span class="user__item_text">10.000 руб</span></div>
+													<div class="user__item_info"><span class="user__item_text">2.000 руб</span></div>
+													<div class="user__item_info-sm">
+														<span class="user__item_text">Заказ #4401</span>
+														<span class="user__item_text">10.000 руб</span>
+														<span class="user__item_text">Активен</span>
+														<span class="user__item_text">с 10.01.2022-10.07.2022</span>
+														<span class="user__item_text">Остаток: 2.000 руб</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="set">
+										<div class="set__btn active">
+											<h3 class="content__header">Завершенные заказы</h3>
+										</div>
+										<div class="set__content" style="display: block;">
+											<div class="user__items">
+												<div class="user__item user__item_title">
+													<div class="user__item_info-big"><span class="user__item_text">Сертификат</span></div>
+													<div class="user__item_info"><span class="user__item_text">Период</span></div>
+													<div class="user__item_info"><span class="user__item_text">Статус заказа</span></div>
+													<div class="user__item_info"><span class="user__item_text">Номинал</span></div>
+													<div class="user__item_info"><span class="user__item_text">Остаток</span></div>
+												</div>
+												<div class="user__item grey_text">
+													<div class="user__item_info-big">
+														<span class="user__item_text">Подарочный сертификат</span>
+													</div>
+													<div class="user__item_info"><span class="user__item_text">с 10.02.2022 <br>до 10.03.2022</span></div>
+													<div class="user__item_info"><span class="user__item_text">
+														<span class="user__item_text">Завершен</span><br><br>
+														Заказ #4500<br>
+														от 29.01.2021
+														</span>
+													</div>
+													<div class="user__item_info"><span class="user__item_text">8.000 руб</span></div>
+													<div class="user__item_info"><span class="user__item_text">0 руб</span></div>
+													<div class="user__item_info-sm">
+														<span class="user__item_text">Заказ #4405</span>
+														<span class="user__item_text">8.000 руб</span>
+														<span class="user__item_text">Завершен</span>
+														<span class="user__item_text">Остаток: 0 руб</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="user-sidebar__close goback goback_payment">Назад к сайту</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-2.2.4.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/core.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lace Grapce | Оплата</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/slick.css"/>
+	<link rel="stylesheet" href="css/jquery.fancybox.css"/>
+	<link rel="stylesheet" href="css/content.css">
+	<link rel="stylesheet" href="css/fonts.css"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<div class="page order__page">
+		<div class="page__header">
+			<header class="header">
+				<div class="wrapper">
+					<div class="header__inner">
+						<div class="header__top">
+							<div class="header__logo">
+								<a href="index.html">
+									<img src="img/logo.svg" class="logo" alt="logo">
+									<img src="img/logo_dark.svg" class="logo_dark" alt="logo">
+								</a>
+							</div>
+							<div class="mob_goback"></div>
+							<a href="#" data-fancybox data-type="ajax" data-src="modal-user.html" data-selector="#modal-user" class="header__user"></a>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="page__content payment">
+			<div class="content">
+					<div class="order">
+						<h2 class="order__header_mob">ваш заказ</h2>
+						<div class="order__left">
+							<div class="order__left_wrapper">
+								<h2 class="order__header">детали заказа</h2>
+								<div class="tabs">
+									<input class="tabs-input" id="tab_visitor" type="radio" name="tabs_order" checked>
+									<label class="tabs-label" for="tab_visitor" title="Другой получатель"><span>Другой получатель</span></label>
+
+									<input  class="tabs-input" id="tab_user" type="radio" name="tabs_order">
+									<label class="tabs-label last" for="tab_user" title="Доставить мне"><span>Доставить мне</span></label>
+
+									<div class="sections" id="content_visitor">
+										<div class="order__form form_with_wh_bg">
+											<form action="#">
+												<div class="form__left">
+													<label for="visitor_name">Имя получателя*</label>
+													<input type="text" id="visitor_name" name="visitor_name">
+												</div>
+												<div class="form__right">
+													<label for="visitor_phone">Телефон получателя*</label>
+													<input type="text "id="visitor_phone" name="visitor_phone">
+												</div>
+
+												<label for="visitor_address">Адрес доставки*</label>
+												<input type="text" id="visitor_address" name="visitor_address">
+
+												<label for="visitor_selector">Мы можем согласовывать адрес и время с получателем*</label>
+												<div class="select-wrapper">
+													<select name="visitor_selector" id="visitor_selector">
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+													</select>
+												</div>
+
+												<div class="form__left">
+													<label for="visitor_date">Дата доставки*</label>
+													<div class="select-wrapper">
+														<input type="text" id="visitor_date" name="visitor_date">
+													</div>
+												</div>
+												<div class="form__right">
+													<label for="visitor_time">Время доставки*</label>
+													<div class="select-wrapper">
+														<input type="text "id="visitor_time" name="visitor_time">
+													</div>
+												</div>
+
+												<div class="form__left">
+													<label for="your_name">Ваше имя*</label>
+													<input type="text" id="your_name" name="your_name">
+												</div>
+												<div class="form__right">
+													<label for="your_phone">Ваш телефон, чтобы сообщить о доставке*</label>
+													<input type="text "id="your_phone" name="your_phone">
+												</div>
+
+												<label for="visitor_e-mail">Электронная почта*</label>
+												<input type="email" id="visitor_e-mail" name="visitor_e-mail">
+
+												<label for="visitor_text">Что написать в открытке</label>
+												<input type="text" id="visitor_text" name="visitor_text">
+
+												<div class="mob__send">
+													<div class="order__send_cards">
+														<p class="order__send_card cards_yoomoney"></p>
+														<p class="order__send_card cards_visa"></p>
+														<p class="order__send_card cards_mastercard"></p>
+													</div>
+													
+													<button class="order__btn btn_dark">Подтвердить заказ</button>
+												</div>
+
+												<div class="order__send_block">
+													<div class="order__send_content">
+														<div class="order__send_left">
+															<h3 class="order__send_header">Товар</h3>
+															<div class="order__send_text">Букет</div>
+															<div class="order__send_text">доставка</div>
+															<div class="order__send_header">Итого</div>
+														</div>
+														<div class="order__send_right">
+															<h3 class="order__send_header">Подытог</h3>
+															<div class="order__send_text">Нежность</div>
+															<div class="order__send_text">в пределах МКАД</div>
+															<div class="order__send_header">сумма</div>
+														</div>
+													</div>
+
+													<div class="order__send_cards">
+														<p class="order__send_card cards_yoomoney"></p>
+														<p class="order__send_card cards_visa"></p>
+														<p class="order__send_card cards_mastercard"></p>
+													</div>
+													
+													<button class="order__btn btn_dark">Подтвердить заказ</button>
+												</div>
+												<ul class="footer__menu">
+													<li><a href="#">Политика конфиденциальности</a></li>
+													<li><a href="#">Оферта на услуги магазина</a></li>
+													<li><a href="#">Задать вопрос</a></li>
+												</ul>
+											</form>
+										</div>
+									</div>
+
+									<div class="sections" id="content_user">
+										<div class="order__form form_with_wh_bg">
+											<form action="#">
+												<div class="form__left">
+													<label for="user_name">Ваше имя*</label>
+													<input type="text" id="user_name" name="user_name">
+												</div>
+												<div class="form__right">
+													<label for="user_phone">Телефон*</label>
+													<input type="text "id="user_phone" name="user_phone">
+												</div>
+
+												<label for="user_address">Адрес доставки*</label>
+												<input type="text" id="user_address" name="user_address">
+
+												<div class="form__left">
+													<label for="user_date">Дата доставки*</label>
+													<div class="select-wrapper">
+														<input type="text" id="user_date" name="user_date">
+													</div>
+												</div>
+												<div class="form__right">
+													<label for="user_time">Время доставки*</label>
+													<div class="select-wrapper">
+														<input type="text "id="user_time" name="user_time">
+													</div>
+												</div>
+
+												<label for="user_e-mail">Электронная почта*</label>
+												<input type="email" id="user_e-mail" name="user_e-mail">
+
+												<label for="user_text">Что написать в открытке</label>
+												<input type="text" id="user_text" name="user_text">
+
+												<label for="user_other">Примечание</label>
+												<input type="text" id="user_other" name="user_other">
+
+												<div class="mob__send">
+													<div class="order__send_cards">
+														<p class="order__send_card cards_yoomoney"></p>
+														<p class="order__send_card cards_visa"></p>
+														<p class="order__send_card cards_mastercard"></p>
+													</div>
+													
+													<button class="order__btn btn_dark">Подтвердить заказ</button>
+												</div>
+
+												<div class="order__send_block">
+													<div class="order__send_content">
+														<div class="order__send_left">
+															<h3 class="order__send_header">Товар</h3>
+															<div class="order__send_text">Букет</div>
+															<div class="order__send_text">доставка</div>
+															<div class="order__send_header">Итого</div>
+														</div>
+														<div class="order__send_right">
+															<h3 class="order__send_header">Подытог</h3>
+															<div class="order__send_text">Нежность</div>
+															<div class="order__send_text">в пределах МКАД</div>
+															<div class="order__send_header">сумма</div>
+														</div>
+													</div>
+
+													<div class="order__send_cards">
+														<p class="order__send_card cards_yoomoney"></p>
+														<p class="order__send_card cards_visa"></p>
+														<p class="order__send_card cards_mastercard"></p>
+													</div>
+													
+													<button class="order__btn btn_dark">Подтвердить заказ</button>
+												</div>
+
+												<ul class="footer__menu">
+													<li><a href="#">Политика конфиденциальности</a></li>
+													<li><a href="#">Оферта на услуги магазина</a></li>
+													<li><a href="#">Задать вопрос</a></li>
+												</ul>
+											</form>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="wrapper">
+									<div class="user-sidebar__close goback">Назад к сайту</div>
+								</div> -->
+							</div>
+
+						</div>
+						<div class="order__right">
+							<div class="order__right_sm">
+								<h3 class="order__send_header">Товар</h3>
+								<div class="order__send_text">Букет “Нежность”</div>
+								<div class="order__send_text">Доставка в пределах МКАД</div>
+								<div class="order__send_header">итого 10.000 руб</div>
+							</div>
+							<div class="order__right_wrapper">
+								<h2 class="order__header">ваш заказ</h2>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="page__footer">
+			<div class="grey_bg">
+				<div class="wrapper">
+					<footer class="footer">
+						<h2 class="footer__header">
+							<a href="#">Получить бонусы</a>
+						</h2>
+						<p class="footer__text">
+							5% от стоимости с каждой покупки на нашем сайте
+						</p>
+					</footer>
+				</div>
+			</div>
+			<div class="wrapper">
+				<footer class="footer">
+					<div class="footer__social">
+						<a href="#" class="footer__social_item social_item_youtube"></a>
+						<a href="#" class="footer__social_item social_item_instagram"></a>
+						<a href="#" class="footer__social_item social_item_pinterest"></a>
+						<a href="#" class="footer__social_item social_item_vimeo"></a>
+					</div>
+					<ul class="footer__menu">
+						<li><a href="#">Сотрудничество</a></li>
+						<li><a href="#">Политика конфиденциальности</a></li>
+						<li><a href="#">Оферта на услуги магазина</a></li>
+						<li><a href="#">Оферта на  обучение</a></li>
+						<li><a href="#">Задать вопрос</a></li>
+					</ul>
+					<div class="scrollup"></div>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-2.2.4.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/core.js"></script>
+</body>
+</html>
